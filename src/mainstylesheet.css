@@ -169,10 +169,9 @@ h1 {
 .top_of_page:hover {
     height:5em;
     width:5em;
-}
-
-.top_arrow:hover {
-    width:5em;
+    .top_arrow {
+        width:5em
+    }
 }
 
 .top_arrow {
