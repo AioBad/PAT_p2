@@ -153,7 +153,6 @@ h1 {
 }
 
 .top_of_page {
-    z-index: +10;
     text-align: center;
     color: white;
     border: none;
