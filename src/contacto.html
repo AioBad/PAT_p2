@@ -26,9 +26,15 @@
             <h1>Contacta con nosotros</h1>
         </header>
         <div class="main_article">
-            <p>¿Una duda? ¿Una categoría nueva que querrías ver en nuestra web?</p><p>¡No dudes en contactar con nosotros! Rellena el formulario y en breve te contestaremos.</p>
+            <p>¿Una duda? ¿Una categoría nueva que querrías ver en nuestra web? ¡No dudes en contactar con nosotros! Rellena el formulario y en breve te contestaremos.</p>
+            <p>Si prefieres contactar con nosotros por WhatsApp, escanea el código QR o haz click en el link</p>
         </div>
-        <form class=contact_form>
+        <nav class="contact_type">
+            <a href="#contact_form">Formulario</a>
+            <a href="#whatsapp">WhatsApp</a>
+        </nav>
+
+        <form class=contact_form id="contact_form">
             
                 <legend id="tu_info">Tu información</legend>
                 <label id="name_label" for="name_answer">Tu nombre</label>
@@ -53,6 +59,11 @@
                 <textarea name="message" id="message_answer" rows=10 required></textarea>
                 <input type="submit" value="Envíanos tu mensaje" id="submit_contact_form"/>
         </form>
+        
+        <div class="whatsapp" id="whatsapp">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="img/qr_whatsapp.png" alt="QR_whatsapp" id="whatsapp_img"><a>    
+        </div>
+    
     </main>
     <div class="button top_of_page"><a href="#" ><img class="top_arrow" src="img/top-arrow-openmoji.png" alt="Go to top logo"></a></div>
 

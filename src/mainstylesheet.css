@@ -41,10 +41,10 @@ body {
 }
 
 .main {
-    margin-right: 5%;
-    margin-left:5%;
+    margin-right: 10%;
+    margin-left:10%;
     margin-top:4em;
-    padding-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .show_menu{
@@ -72,6 +72,7 @@ body {
     text-align: justify;
     text-indent: 2em;
     clear:both;
+    
 }
 
 .bandera_dibujo_cont {
@@ -84,6 +85,11 @@ body {
 
 #logo_img{
     width:4em;
+}
+
+.cat_link {
+    text-decoration: none;
+    color:inherit;
 }
 
 .contact_form {
@@ -106,6 +112,46 @@ body {
     padding-right: 10%;
     text-align: right;
     column-gap: .5em;
+}
+
+.contact_form {
+    display:none;
+}
+
+#contact_form:target{
+    display:grid;
+}
+
+.whatsapp {
+    display:none;
+    text-align: center;
+    padding:3em;
+}
+
+#whatsapp_img:hover{
+    background-color: lightgrey;
+}
+
+#whatsapp:target {
+    display:block;
+}
+
+.contact_type {
+    text-align: center;
+    margin-top:2em;
+}
+
+.contact_type a {
+    text-decoration: none;
+    font-size:2em;
+    color:white;
+    background-color: #007bff;
+    border-radius: .5em;
+    padding: .4em .4em;
+}
+
+.contact_type a:hover{
+    background-color: blue;
 }
 
 .contact_form input:invalid, textarea:invalid, select:invalid {
@@ -185,11 +231,14 @@ h1 {
     margin-right:5%;
 }
 
-h2 {
+h2, .contact_form > legend{
     text-align:center;
     color:lightblue;
     font-weight: bold;
     font-size:2em;
+}
+
+h2 {
     margin-top: .5em;
     margin-bottom: .5em;
     margin-left:5%;
@@ -213,7 +262,8 @@ h3 {
     border: none;
     height: 3em;
     width: 3em;
-    background-color: green;
+
+    background-color: skyblue;
     border-radius: 50%;
     position:fixed;
     bottom:20px;
@@ -225,7 +275,6 @@ h3 {
     height:4em;
     width:4em;
 }
-
 
 .pie_de_pagina {
     display:flex;
@@ -334,5 +383,41 @@ h3 {
     .pie_de_pagina a:hover {
         background-color: skyblue;
     }
-    
+}
+
+.video_embeded_p {
+    text-align: center;
+}
+
+
+.embed_youtube_video{
+        position:static;
+        width: 50%;
+        aspect-ratio: 16/9;
+}
+
+.best_of_table {
+    margin-top: 1em;
+    border-collapse: collapse;
+}
+
+.best_of_table th {
+    text-align: center;
+    border: .15em solid lightblue;
+}
+
+.best_of_table td {
+    border: .15em solid lightblue;
+    padding:.5em;
+    text-align: left;
+}
+
+.best_of_table td[rowspan="2"] {
+    text-align: center;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+}
+
+.best_of_table thead tr th:first-child{
+    border:none;
 }
