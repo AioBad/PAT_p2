@@ -21,15 +21,17 @@ body {
     list-style: none;
     background-color: skyblue; 
     border-block-end: 0.15rem solid darkblue;
-}
-
-.main_menu li{
+    text-align: center;
     height: 100%;
 }
 
-.main_menu a {
+.main_menu li {
     flex: 1 1 0;
     text-align: center;
+}
+
+.main_menu a {
+    height:100%;
     text-decoration: none; 
     color:black;
 }
