@@ -1,9 +1,11 @@
 * {
     margin: 0;
-
     padding:0;
 }
 
+body {
+    font-size: 2rem;
+}
 
 .main_menu {
     overflow: hidden;
@@ -16,23 +18,20 @@
     display: flex;
     top:0;
     flex-direction: row;
-    align-items: center;
     list-style: none;
-    background-color: white;
-    border-block-end: 0.15rem solid lightblue;
+    background-color: skyblue; 
+    border-block-end: 0.15rem solid darkblue;
 }
 
 .main_menu li{
-    flex: 1 1 0;
     height: 100%;
 }
 
 .main_menu a {
-    display: flex;
+    flex: 1 1 0;
     text-align: center;
     text-decoration: none; 
     color:black;
-    display: block;
 }
 
 .main_menu li:hover{
@@ -43,23 +42,45 @@
     margin-top:4em;
 }
 
-@media (max-width: 300px){
-    .main_menu{
-        display:none;
-    }
-    .main {
-        margin-top: 0;
-    }
+.show_menu{
+    display:none;
+    position:relative;
+    top:0;
+    right:0;
+    width:100%;
+    text-align: center;
+    background-color: skyblue;
+    border-block-end: 0.1rem solid darkblue;
+    text-decoration: none;
+    color:black;
+}
+
+#show_menu_img {
+    width:4rem;
+}
+
+.show_menu:hover {
+    background-color: lightblue;
 }
 
 .main_article {
-    margin-left:10%;
-    margin-right: 10%;
+    margin-left:5%;
+    margin-right: 5%;
     text-align: justify;
     text-indent: 2em;
+    padding-bottom: 1em;
+    clear:both;
 }
 
-#logo img {
+.bandera_dibujo_cont {
+    float:right;
+}
+
+#bandera_dibujo {
+    width: 10em;
+}
+
+#logo_img{
     width:4em;
 }
 
@@ -124,6 +145,16 @@
     grid-area: message_legend;
 }
 
+#tema_del_mensaje_label {
+    grid-area: tema_del_mensaje_label;
+}
+
+#tema_del_mensaje_answer {
+    font-size: 1em;
+    text-align: center;
+    grid-area: tema_del_mensaje_answer;
+}
+
 #message_label {
     text-align: left;
     grid-area: message_label;
@@ -131,14 +162,6 @@
 
 #message_answer {
     grid-area: message_answer;
-}
-
-#tema_del_mensaje_label {
-    grid-area: tema_del_mensaje_label;
-}
-
-#tema_del_mensaje_answer {
-    grid-area: tema_del_mensaje_answer;
 }
 
 #submit_contact_form {
@@ -152,12 +175,13 @@ h1 {
     margin-bottom: .5em;
 }
 
-.top_of_page {
+.top_of_page .top_arrow {
+    z-index: 10;
     text-align: center;
     color: white;
     border: none;
-    height: 4em;
-    width: 4em;
+    height: 3em;
+    width: 3em;
     background-color: green;
     border-radius: 50%;
     position:fixed;
@@ -166,15 +190,115 @@ h1 {
     box-shadow: 0 2px 4px darkslategray;
 }
 
-.top_of_page:hover {
-    height:5em;
-    width:5em;
-    .top_arrow {
-        width:5em
+.top_of_page:hover .top_arrow:hover{
+    height:4em;
+    width:4em;
+}
+
+
+.pie_de_pagina {
+    display:flex;
+    position:relative;
+    bottom:0;
+    left: 0;
+    width: 80%;
+    padding-left: 10%;
+    padding-right:10%;
+    height:3em;
+    background-color: green;
+    text-align: center;
+    border-block-start: 0.15rem solid skyblue;
+}
+
+
+.pie_de_pagina a {
+    padding-top:1em;
+    flex: 1 1 0;
+    text-decoration: none;
+    color: white;
+}
+
+.pie_de_pagina a:hover {
+    background-color: skyblue;
+}
+
+@media (max-width: 45em){
+    .show_menu{
+        display:block;
     }
-}
 
-.top_arrow {
-    width: 4em;
-}
+    .hide_menu{
+        display:none;
+    }
 
+    #main_menu {
+        display:none;
+        position:relative;
+        top:0;
+        font-size: .3em;
+    }
+
+    .main_menu ul {
+        display: flex;
+        top:0;
+        flex-direction: column;
+        list-style: none;
+        background-color: skyblue; 
+        border-block-end: 0.15rem solid darkblue;
+        height: 100%;
+    }
+
+    .main_menu li{
+        height: 100%;
+    }
+    
+    .main_menu a {
+        flex: 1 1 0;
+        text-align: center;
+        text-decoration: none; 
+        color:black;
+    }
+    
+    .main_menu li:hover{
+        background-color: lightblue;
+    }
+
+    #main_menu:target{
+        display:block;
+        .hide_menu{display:block;}
+    }
+
+
+    .main {
+        margin-top: 1em;
+    }
+
+    .pie_de_pagina {
+        display:flex;
+        flex-direction: column;
+        position:relative;
+        bottom:0;
+        left: 0;
+        width: 80%;
+        padding-left: 10%;
+        padding-right:10%;
+        height:9em;
+        background-color: green;
+        text-align: center;
+        border-block-start: 0.15rem solid skyblue;
+        font-size: .5em;
+    }
+    
+    
+    .pie_de_pagina a {
+        padding-top:1em;
+        flex: 1 1 0;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .pie_de_pagina a:hover {
+        background-color: skyblue;
+    }
+    
+}

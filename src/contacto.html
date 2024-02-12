@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/icon type">
     <link rel="stylesheet" href="mainstylesheet.css">
     <title>Prepara tu viaje por España !</title>
 </head>
 <body>
-    <nav class="main_menu">
-        <ul>
-            <li><a href="index.html" id="logo"><img alt="logo" src="img/logo.png" ></a></li>
-            <li><a href="categorias/bares.html">Bares</a></li>
-            <li><a href="categorias/bebidas.html">Bebidas</a></li>
-            <li><a href="categorias/turismo.html">Turismo</a></li>
-            <li><a href="categorias/restaurantes.html">Restaurantes</a></li>
-            <li><a href ="contacto.html">Contacto</a></li>
-        </ul>
+    <nav>
+        <a href="#main_menu" class="show_menu"><img src="img/logo.png" alt="reduced_menu_logo" id="show_menu_img">Menú</a>
+        <section id="main_menu" class="main_menu">
+            <ul>
+                <a href="index.html" class="logo"><li><img alt="logo" src="img/logo.png" id="logo_img"></li></a>
+                <a href="categorias/bares.html" class="menu_cat"><li></br>Bares</li></a>
+                <a href="categorias/bebidas.html" class="menu_cat"><li></br>Bebidas</li></a>
+                <a href="categorias/turismo.html" class="menu_cat"><li></br>Turismo</li></a>
+                <a href="categorias/restaurantes.html" class="menu_cat"><li></br>Restaurantes</li></a>
+                <a href ="contacto.html" class="menu_cat"><li></br>Contacto</li></a>
+            </ul>
+        </section>
     </nav>
     <main class="main">
         <header>
             <h1>Contacta con nosotros</h1>
         </header>
         <div class="main_article">
-            <p>¿Una duda? ¿Una categoría nueva que querrías ver en nuestra web?</p><p>¡No dudes en contactar con nosotros! Rellena en formulario y en breve te contestaremos.</p>
+            <p>¿Una duda? ¿Una categoría nueva que querrías ver en nuestra web?</p><p>¡No dudes en contactar con nosotros! Rellena el formulario y en breve te contestaremos.</p>
         </div>
         <form class=contact_form>
             
@@ -51,5 +55,12 @@
         </form>
     </main>
     <div class="button top_of_page"><a href="#" ><img class="top_arrow" src="img/top-arrow-openmoji.png" alt="Go to top logo"></a></div>
+
+    <div class="pie_de_pagina">
+        <a href="https://google.es">Salir de aquí</a>
+        <a href="https://repositorio.comillas.edu/xmlui/bitstream/handle/11531/86088/Gu%c3%ada%20Docente.pdf?sequence=1">Avisos legales</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Reclamación</a>
+    </div>
+    
 </body>
 </html>
