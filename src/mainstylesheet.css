@@ -225,6 +225,10 @@ h1 {
 }
 
 @media (max-width: 45em){
+    body {
+        font-size: .5rem;
+    }
+
     .show_menu{
         display:block;
     }
