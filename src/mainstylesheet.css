@@ -41,7 +41,10 @@ body {
 }
 
 .main {
+    margin-right: 5%;
+    margin-left:5%;
     margin-top:4em;
+    padding-bottom: 1em;
 }
 
 .show_menu{
@@ -66,11 +69,8 @@ body {
 }
 
 .main_article {
-    margin-left:5%;
-    margin-right: 5%;
     text-align: justify;
     text-indent: 2em;
-    padding-bottom: 1em;
     clear:both;
 }
 
