@@ -108,6 +108,10 @@ body {
     column-gap: .5em;
 }
 
+.contact_form input:invalid, textarea:invalid, select:invalid {
+    border:2px solid red; 
+}
+
 .contact_form > legend {
     padding-top: 1em;
     color:skyblue;
